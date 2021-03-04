@@ -1,0 +1,12 @@
+<h1>Cocktails list</h1>
+
+<ul>
+  <% @cocktails.each do |cocktail| %>
+    <li><%= link_to "#{cocktail.name}",cocktail_path(cocktail),  class: "btn btn-success m-3"%></li>
+  <% end %>
+</ul>
+
+<%= link_to 'Add new cocktail', new_cocktail_path%>
+
+
+<%= image_tag "home.jpg", alt: "alttext" %>
